@@ -1,0 +1,88 @@
+
+/*=============================================
+=            pagination            =
+=============================================*/
+
+.page-pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -5px -10px;
+    & li {
+        font-size: 16px;
+        line-height: 24px;
+        color: $heading-text-color;
+        text-align: center;
+        margin: 5px 10px;
+        & a {
+            color: $heading-text-color;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 50px;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & i {
+                line-height: 24px;
+            }
+        }
+        // Responsive
+        @media #{$small-mobile}{
+            font-size: 14px;
+            & a {
+                padding: 9px;
+                width: 40px;
+                height: 40px;
+                & i {
+                    line-height: 24px;
+                }
+            }
+        }
+        &:hover {
+            & a {
+                color: $white;
+                background-color: $heading-text-color;
+            }
+        }
+        &.active {
+            & a {
+                color: $white;
+                background-color: $theme-color--default;
+            }
+        }
+        &:first-child {
+            & a {
+                color: $heading-text-color;
+                width: auto;
+                padding: 10px 20px;
+                & i {
+                    margin-right: 10px;
+                    float: left;
+                }
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+        &:last-child {
+            & a {
+                color: $heading-text-color;
+                width: auto;
+                padding: 10px 20px;
+                flex-direction: row-reverse;
+                & i {
+                    margin-left: 10px;
+                    float: right;
+                }
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+/*=====  End of pagination  ======*/
+

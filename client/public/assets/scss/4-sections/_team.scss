@@ -1,0 +1,214 @@
+
+/*=============================================
+=            team            =
+=============================================*/
+
+.team-job{  
+
+    &__title{
+        margin-bottom: 30px;
+        margin-top: -5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span{
+            line-height: 1;
+            vertical-align: top;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        @media #{$large-mobile}{
+            font-size: 30px;
+        }
+
+        @media #{$extra-small-mobile}{
+            font-size: 25px;
+        }
+    }
+
+    &__title-wrapper{
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #cecece;
+    }
+
+    &__content{
+        line-height: 1;
+    }
+
+    &__list-wrapper{
+        margin-bottom: -40px;
+    }
+
+    &__single{
+        margin-bottom: 40px;
+        border-left: 2px solid $body-text-color;
+        padding-left: 15px;
+        .title{
+            font-size: 20px;
+            margin-bottom: 15px;
+            a{
+                color: $heading-text-color;
+                transition: $transition--cubic;
+                &:hover{
+                    color: $theme-color--default;
+                }
+            }
+        }
+
+        .text{
+            font-size: 16px;
+            color: #757575;
+        }
+    }
+
+    &__image{
+        @media #{$tablet-device}{
+            margin-top: 50px;
+        }
+
+        @media #{$large-mobile}{
+            margin-top: 30px;
+        }
+    
+    }
+}
+
+
+.team-member-wrapper{
+    margin-bottom: -30px;
+}
+
+/*-- Team --*/
+.team {
+    border: 1px solid #eeeeee;
+    transition: all 0.3s ease 0s;
+    & .image {
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        text-align: center;
+        padding: 25px 20px 30px;
+        & .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+
+            @media #{$desktop-device}{
+                font-size: 20px;
+            }
+        }
+        & span {
+            display: block;
+            line-height: 18px;
+            margin-bottom: 5px;
+            font-family: $poppins;
+        }
+        & .email {
+            display: block;
+            line-height: 18px;
+            margin-bottom: 5px;
+            font-family: $poppins;
+
+            &:hover{
+                color: $theme-color--default;
+            }
+        }
+        & .social {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            & a {
+                width: 30px;
+                height: 30px;
+                padding: 5px;
+                text-align: center;
+                border-radius: 50px;
+                display: block;
+                border: 1px solid $theme-color--default;
+                color: $theme-color--default;
+                margin-top: 10px;
+                margin-right: 10px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    color: $white !important;
+                    background-color: $theme-color--default;
+                    &.facebook {
+                        background-color: $facebook;
+                    }
+                    &.twitter {
+                        background-color: $twitter;
+                    }
+                    &.linkedin {
+                        background-color: $linkedin;
+                    }
+                    &.google {
+                        background-color: $google-plus;
+                    }
+                    &.instagram {
+                        background-color: $instagram;
+                    }
+                    &.pinterest {
+                        background-color: $pinterest;
+                    }
+                    &.skype {
+                        background-color: $skype;
+                    }
+                    &.tumblr {
+                        background-color: $tumblr;
+                    }
+                }
+                & i {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                &.facebook {
+                    border-color: $facebook;
+                    color: $facebook;
+                }
+                &.twitter {
+                    border-color: $twitter;
+                    color: $twitter;
+                }
+                &.linkedin {
+                    border-color: $linkedin;
+                    color: $linkedin;
+                }
+                &.google {
+                    border-color: $google-plus;
+                    color: $google-plus;
+                }
+                &.instagram {
+                    border-color: $instagram;
+                    color: $instagram;
+                }
+                &.pinterest {
+                    border-color: $pinterest;
+                    color: $pinterest;
+                }
+                &.skype {
+                    border-color: $skype;
+                    color: $skype;
+                }
+                &.tumblr {
+                    border-color: $tumblr;
+                    color: $tumblr;
+                }
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0 5px 15px rgba($black, 0.15);
+        border-color: transparent;
+    }
+}
+
+
+/*=====  End of team  ======*/
+

@@ -1,0 +1,122 @@
+/*=============================================
+=            service grid slider            =
+=============================================*/
+
+.service-slider{
+    .ht-swiper-button{
+        &-nav{
+            display: none;
+        }
+
+    }
+
+    &__container{
+
+        &--style2{
+            .swiper-container{
+                padding: 10px;
+                margin: -10px;
+            }
+            margin-top: -245px;
+        }
+    }
+}
+
+.service-grid-item{
+    &__image{
+        position: relative;
+        margin-bottom: 60px;
+        .icon{
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            background-color: #393939;
+            position: absolute;
+            bottom: -35px;
+            left: 20px;
+            transition: $transition--cubic;
+
+            i{
+                color: $white;
+                font-size: 40px;
+            }
+
+        }
+
+        a{
+            display: block;
+            img{
+                width: 100%;
+                transition: $transition--cubic;
+                transition-duration: 0.6s;
+            }
+
+            
+        }
+    }
+
+    &__image-wrapper{
+        overflow: hidden;
+    }
+    
+    &__content{
+        line-height: 1;
+        .title{
+            a{
+                font-size: 22px;
+                color: #393939;
+                font-weight: 700;
+                transition: $transition--cubic;
+                &:hover{
+                    color: $theme-color--default;
+                }
+
+                @media #{$extra-small-mobile}{
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .subtitle{
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-family: $poppins;
+            color: #5a5a5a;
+        }
+    }
+
+    &:hover{
+        .service-grid-item__image{
+            .icon{
+                background-color: $theme-color--default;
+            }
+
+                img{
+                    transform: scale(1.1);
+                }
+        }
+
+        .service-grid-item__content{
+            .see-more-link{
+                color: $theme-color--default;
+            }
+        }
+    }
+
+
+    &--style2{
+        box-shadow: 0 1px 15.36px 0.64px rgba(0, 0, 0, 0.2);
+        .service-grid-item__image{
+            margin-bottom: 0;
+        }
+        .service-grid-item__content{
+            background-color: $white;
+            padding: 30px;
+        }
+    }
+}
+
+/*=====  End of service grid slider  ======*/
+

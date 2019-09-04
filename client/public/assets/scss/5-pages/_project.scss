@@ -1,0 +1,130 @@
+/*=============================================
+=            Project            =
+=============================================*/
+
+.project-item-wrapper {
+  margin-bottom: -30px;
+}
+
+/*-- Project --*/
+
+
+.project-details {
+  p {
+    font-family: $poppins;
+  }
+}
+
+/*-- Project Information --*/
+.project-information {
+  background-color: $heading-text-color;
+  padding: 30px 35px;
+
+  & h3 {
+    color: $white;
+    margin-bottom: 20px;
+  }
+
+  & ul {
+    & li {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba($white, 0.1);
+      color: $white;
+      font-size: 14px;
+
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: none;
+      }
+
+      & strong {
+        width: 130px;
+        display: inline-flex;
+      }
+
+      a {
+        &:hover {
+          color: $theme-color--default;
+        }
+      }
+    }
+  }
+}
+
+
+.gallery-item {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: $heading-text-color;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  & img {
+    width: 100%;
+  }
+
+  & .plus {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 3;
+    opacity: 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      background-color: $white;
+      transition: all 0.3s ease 0s;
+    }
+
+    &::before {
+      width: 150px;
+      height: 1px;
+    }
+
+    &::after {
+      width: 1px;
+      height: 150px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.75;
+    }
+
+    & .plus {
+      opacity: 1;
+
+      &::before {
+        width: 40px;
+      }
+
+      &::after {
+        height: 40px;
+      }
+    }
+  }
+}
+
+/*=====  End of Project  ======*/

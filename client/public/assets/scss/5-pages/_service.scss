@@ -1,0 +1,78 @@
+
+/*=============================================
+=            Service            =
+=============================================*/
+
+
+.service-item-wrapper{
+    margin-bottom: -30px;
+}
+
+/*-- Service --*/
+
+
+.service-details{
+    @media #{$tablet-device}{
+        margin-bottom: 50px;
+    }
+
+    @media #{$large-mobile}{
+        margin-bottom: 30px;
+    }
+
+    .content{
+        p{
+            font-family: $poppins;
+        }
+    }
+}
+
+.service-gallery{
+    position: relative;
+
+    .ht-swiper-button{
+        &-nav{
+            background-color: $theme-color--default;
+            border-color: $theme-color--default;
+            color: $white;
+            visibility: hidden;
+            opacity: 0;
+            transition: $transition--cubic;
+        }   
+
+        &-prev{
+            left: 70px;
+        }
+
+        &-next{
+            right: 70px;
+        }
+    }
+
+    &:hover{
+        .ht-swiper-button{
+            &-nav{
+                
+                visibility: visible;
+                opacity: 1;
+            }   
+    
+            &-prev{
+                left: 50px;
+                @media #{$extra-small-mobile}{
+                    left: 15px;
+                }
+            }
+    
+            &-next{
+                right: 50px;
+                @media #{$extra-small-mobile}{
+                    right: 15px;
+                }
+            }
+        }
+    }
+}
+
+/*=====  End of Service  ======*/
+

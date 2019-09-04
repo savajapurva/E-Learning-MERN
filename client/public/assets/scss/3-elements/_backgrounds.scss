@@ -1,0 +1,56 @@
+
+/*=============================================
+=            backgrounds            =
+=============================================*/
+
+
+/* background images */
+
+.funfact-bg{
+    background-image: url("/assets/img/backgrounds/funfact-bg.jpg");
+}
+
+.testimonial-slider-area-bg{
+    background-image: url("/assets/img/backgrounds/testimonial.jpg");
+}
+
+.breadcrumb-bg{
+    background-color: darkblue;
+}
+
+.white-bg{
+    background-color: #ffffff;
+}
+
+.grey-bg{
+    background-color: #f7f7f7;
+    &--style2{
+        background-color: #eeeeee;
+    }
+    &--style3{
+        background-color: #f5f6fa;
+    }
+}
+
+.dark-bg{
+    background-color: #111;
+    &--style2{
+        background-color: #11202D;
+    }
+    &--style3{
+        background-color: $theme-color--black;
+    }
+    &--style4{
+        background-color: #06112C;
+    }
+    &--style5{
+        background-color: #05103B;
+    }
+}
+
+.default-bg{
+    background-color: $theme-color--default;
+}
+
+/*=====  End of backgrounds  ======*/
+

@@ -1,0 +1,139 @@
+
+/*=============================================
+=            video cta            =
+=============================================*/
+
+.video-cta-content{
+    &__small-title{
+        margin-top: -5px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.5;
+        color: $theme-color--default;
+        margin-bottom: 15px;
+    }
+
+    &__title{
+        font-size: 36px;
+        line-height: 1.2;
+        color: #1d1d25;
+        width: 415px;
+        max-width: 100%;
+        margin-bottom: 30px;
+
+        @media #{$large-mobile}{
+            font-size: 30px;
+        }
+    }   
+
+    &__text{
+        font-size: 18px;
+        line-height: 1.8;
+        color: #1d1d25;
+        font-family: $poppins;
+        margin-bottom: 40px;
+        width: 500px;
+        max-width: 100%;
+
+        @media #{$large-mobile}{
+            margin-bottom: 20px;
+        }
+
+        @media #{$extra-small-mobile}{
+            font-size: 16px;
+        }
+    }
+
+    // @media #{$tablet-device}{
+    //     margin-bottom: 50px;
+    // }
+
+    @media #{$large-mobile}{
+        margin-bottom: 30px;
+    }
+}
+
+.cta-video-image{
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+     a{
+        display: block;
+    }
+    &__image{
+        overflow: hidden;
+        img{
+            transition: $transition--cubic;
+            transition-duration: 0.6s;
+            width: 100%;
+        }
+
+        
+    }
+
+    &__icon{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: $theme-color--default;
+        position: absolute;
+        line-height: 100px;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%) scale(1);
+        transition: $transition--cubic;
+        transition-duration: 0.6s;
+        left: -50px;
+
+        @media #{$tablet-device, $large-mobile}{
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        i{
+            font-size: 36px;
+            color: $white;
+        }
+    }
+
+    &:hover{
+        .cta-video-image__image{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        .cta-video-image__icon{
+
+            transform: translateY(-50%) scale(1.1);
+            @media #{$tablet-device, $large-mobile}{
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+        }
+    }
+
+    &:after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-right: 5px solid $theme-color--default;
+        border-bottom: 5px solid $theme-color--default;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: -1;
+    }
+
+    .video-popup{
+        & > button{
+            background: none;
+            border: none;
+            width: 100%;
+        }
+    }
+
+}
+
+/*=====  End of video cta  ======*/
+

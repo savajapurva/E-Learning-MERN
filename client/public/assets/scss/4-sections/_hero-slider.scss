@@ -1,0 +1,171 @@
+/*=============================================
+=            hero slider            =
+=============================================*/
+
+.hero-alider-area {
+
+  .ht-swiper-button {
+    &-nav {
+      background-color: rgba(255, 255, 255, 0.3);
+      border: 0;
+      color: $white;
+
+      &:hover {
+        background-color: $theme-color--default;
+      }
+    }
+
+    &-prev {
+      left: 100px;
+
+      @media #{$laptop-device} {
+        left: 20px;
+      }
+    }
+
+    &-next {
+      right: 100px;
+
+      @media #{$laptop-device} {
+        right: 20px;
+      }
+    }
+  }
+
+
+  .swiper-slide-active {
+    .hero-slider__content {
+      &>* {
+        &:nth-child(1) {
+          animation-name: fadeInDown;
+          animation-duration: 1.5s;
+          animation-delay: 0.5s;
+        }
+
+        &:nth-child(2) {
+          animation-name: fadeInLeft;
+          animation-duration: 1.5s;
+          animation-delay: 1s;
+        }
+
+        &:nth-child(3) {
+          animation-name: fadeInDown;
+          animation-duration: 1.5s;
+          animation-delay: 2.5s;
+        }
+      }
+    }
+  }
+
+}
+
+.hero-slider {
+
+  &__single-item {
+    width: 100vw !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 730px;
+    width: 580px;
+    max-width: 100%;
+
+    @media #{$laptop-device, $desktop-device} {
+      height: 600px;
+    }
+
+    @media #{$tablet-device} {
+      height: 550px;
+    }
+
+    @media #{$large-mobile} {
+      height: 450px;
+    }
+
+    &>* {
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+  }
+
+  &__title {
+    font-size: 70px;
+    line-height: 1.2;
+    color: $white;
+    margin-bottom: 40px;
+    margin-top: -15px;
+
+    @media #{$laptop-device} {
+      font-size: 60px;
+      margin-top: -12px;
+    }
+
+    @media #{$desktop-device} {
+      font-size: 60px;
+      margin-top: -12px;
+    }
+
+    @media #{$tablet-device} {
+      font-size: 50px;
+      margin-top: -8px;
+    }
+
+    @media #{$large-mobile} {
+      font-size: 40px;
+      margin-top: -8px;
+      margin-bottom: 20px;
+    }
+
+    @media #{$small-mobile} {
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: $white;
+    margin-bottom: 50px;
+
+    @media #{$large-mobile} {
+      margin-bottom: 30px;
+    }
+
+    @media #{$small-mobile} {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__btn {
+    font-size: 13px;
+    line-height: 1;
+    padding: 20px 60px;
+    color: $white;
+    border: 1px solid $white;
+    align-self: flex-start;
+    border-radius: 50px;
+    transition: $transition--cubic;
+
+    &--style2 {
+      align-self: center;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      background-color: $theme-color--default;
+      border-color: $theme-color--default;
+    }
+  }
+}
+
+/*=====  End of hero slider  ======*/

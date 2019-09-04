@@ -1,0 +1,90 @@
+
+/*=============================================
+=            project slider            =
+=============================================*/
+
+.latest-project-slider{
+    &__container-area{
+        position: relative;
+
+        .ht-swiper-button{
+            
+
+            &-prev{
+                left: -100px;
+
+                @media #{$laptop-device, $desktop-device, $tablet-device, $large-mobile}{
+                    left: 30px;
+                }
+
+                @media #{$extra-small-mobile}{
+                    left: 15px;
+                }
+            }
+            
+            &-next{
+                right: -100px;
+                @media #{$laptop-device, $desktop-device, $tablet-device, $large-mobile}{
+                    right: 30px;
+                }
+
+                @media #{$extra-small-mobile}{
+                    right: 15px;
+                }
+            }
+        }
+    }
+    &__single-slide{
+        .image{
+            img{
+                width: 100%;
+            }
+
+            @media #{$tablet-device}{
+                margin-bottom: 50px;
+            }
+
+            @media #{$large-mobile}{
+                margin-bottom: 30px;
+            }
+        }
+
+        .content{
+            .count{
+                font-size: 60px;
+                line-height: 1;
+                color: #bebebe;
+                font-weight: 700;
+                margin-bottom: 20px;
+
+                @media #{$large-mobile}{
+                    font-size: 40px;
+                }
+            }
+
+            .title{
+                font-size: 30px;
+                font-weight: 700;
+                color: #393939;
+                margin-bottom: 20px;
+
+                @media #{$large-mobile}{
+                    font-size: 25px;
+                }
+            }
+
+            .desc{
+                font-size: 18px;
+                font-family: $poppins;
+                margin-bottom: 30px;
+
+                @media #{$extra-small-mobile}{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+/*=====  End of project slider  ======*/
+

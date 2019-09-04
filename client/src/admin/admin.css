@@ -1,0 +1,3 @@
+.divStyle {
+    display:"contents"
+}

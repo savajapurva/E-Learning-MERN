@@ -1,0 +1,62 @@
+
+/*=============================================
+=            preloader            =
+=============================================*/
+
+.preloader-active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    z-index: 99999;
+    background-color: $white;
+    .preloader-area-wrap {
+      position: absolute;
+      left: 50%;
+      display: block;
+      top: 50%;
+      z-index: 999999;
+      transform: translate(-50%, -50%);
+      .spinner {
+        display: flex;
+        div {
+          background-color: $theme-color--default;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          margin-right: 15px;
+          animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  
+          &.bounce1 {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+          }
+  
+          &.bounce2 {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+          }
+        }
+      }
+  
+      @keyframes sk-bouncedelay {
+        0%, 80%, 100% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        40% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+        }
+      }
+    }
+  }
+  
+  .preloader-area-wrap {
+    display: none;
+  }
+
+/*=====  End of preloader  ======*/
+

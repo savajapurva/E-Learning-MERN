@@ -1,0 +1,231 @@
+
+/*=============================================
+=            Default CSS            =
+=============================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  html, body {
+      height: 100%;
+  }
+  body{
+
+      line-height: $body-line-height;
+      font-size: $body-font-size;
+      font-style: normal;
+      font-weight: $body-font-weight;
+      visibility: visible;
+      font-family: $font-family-name;
+      color: $body-text-color;
+      position: relative;
+      background-color: $body-bg-color;
+
+      &.no-overflow{
+        overflow: hidden;
+      }
+
+      &.boxed{
+        max-width: 1500px;
+        box-shadow: 0 0 30px rgba(0,0,0,.06);
+        margin: 0 auto;
+      }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+      color: $heading-text-color;
+      font-family: $heading-font-family-name;
+      font-weight: $heading-font-weight;
+      margin-top: 0;
+      line-height: 1.23;
+  }
+  h1 {
+      font-size: 39px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  h6 {
+    font-size: 9px;
+  }
+  p:last-child {
+      margin-bottom: 0;
+  }
+  a, button {
+      color: inherit;
+      display: inline-block;
+      line-height: inherit;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  a, button, img, input, span {
+      transition: all 0.1s ease 0s;
+  }
+  *:focus {
+      outline: none !important;
+  }
+  a:focus {
+      color: inherit;
+      outline: none;
+      text-decoration: none;
+  }
+  a:hover {
+      text-decoration: none;
+  }
+  button, input[type="submit"] {
+      cursor: pointer;
+  }
+  ul {
+      list-style: outside none none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  
+  /*-- Tab Content & Pane Fix --*/
+
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 15px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10px' width='15px'%3E%3Ctext x='0' y='10' fill='black'%3E%E2%96%BE%3C/text%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+
+  }
+
+
+  .slick-slide>div>div {
+    vertical-align: middle;
+}
+
+
+  .border{
+    border: 1px solid #eee !important;
+  }
+
+  .border-top{
+    border-top: 1px solid #eee !important;
+  }
+
+  .border-right{
+    border-right: 1px solid #eee !important;
+  }
+
+  .border-bottom{
+    border-bottom: 1px solid #eee !important;
+  }
+
+  .border-left{
+    border-left: 1px solid #eee !important;
+  }
+
+
+
+  
+  /* slider default style */
+
+  .ht-swiper-button{
+
+    &-nav{
+        position: absolute;
+        cursor: pointer;
+        transition: all .3s cubic-bezier(.645,.045,.355,1),visibility .3s linear 2s,opacity .3s linear 2s;
+        background-image: none;
+        text-align: center;
+        user-select: none;
+        outline: none !important;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        color: $theme-color--black;
+        border: 2px solid rgba(34,34,34,.16);
+        border-radius: 100%;
+        box-shadow: 0 0 5px rgba(0,0,0,.01);
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        background: none;
+
+        &:hover{
+            background-color: $theme-color--default;
+            border-color: $theme-color--default;
+            color: $white;
+        }
+    }
+
+    &-prev{
+      left: 0;
+    }
+
+    &-next{
+      right: 0;
+    }
+
+}
+
+.swiper-pagination{
+  position: static;
+  display: block;
+  max-width: 100%;
+  text-align: center;
+  width: auto;
+  z-index: 7;
+  line-height: 1;
+
+  &-bullet{
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+      margin: 0 5px;
+      &-active{
+          background-color: $theme-color--black;
+          cursor: default;
+      }
+  }
+
+  .swiper-pagination-bullet{
+    vertical-align: bottom;
+  }
+}
+  
+input{
+    &::placeholder{
+      transition: $transition--cubic;
+  }
+}
+
+
+.vertical-navigation-home-wrapper{
+    margin-left: 300px;
+    @media #{$desktop-device, $tablet-device, $large-mobile}{
+        margin-left: 0;
+    }
+}
+
+
+@keyframes moveVertical{
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+/*=====  End of Default CSS  ======*/

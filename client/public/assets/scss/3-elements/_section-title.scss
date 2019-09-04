@@ -1,0 +1,28 @@
+
+/*=============================================
+=            section title            =
+=============================================*/
+
+.section-title{
+    display: inline-block;
+    font-size: 36px;
+    color: $theme-color--default;
+    font-weight: 700;
+    margin-top: -5px;
+
+    @media #{$extra-small-mobile}{
+        font-size: 30px;
+    }
+}
+
+.title-icon{
+    width: 4px;
+    height: 20px;
+    background-color: $theme-color--default;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+/*=====  End of section title  ======*/
+

@@ -1,0 +1,68 @@
+/*=============================================
+=            CSS Index            =
+=============================================
+
+    -> Helper CSS
+    -> Default CSS
+    -> Spacing
+    -> Header
+    -> Footer
+    -> Sidebar
+    -> Button
+    -> Section title
+    -> Backgrounds
+    -> Scroll top
+    -> Breadcrumb
+    -> Pagination
+    -> Preloader
+    -> Hero slider
+    -> Service grid slider
+    -> Video cta
+    -> Project slider
+    -> Team
+    -> Testimonial slider
+    -> Service tab
+    -> Fun fact
+    -> Blog
+    -> About
+    -> Service
+    -> Project
+    -> Contact
+    -> 404
+    -> Landing page
+    
+ 
+/*=====  End of CSS Index  ======*/
+
+
+    @import '0-base/variables';
+    @import '0-base/mixins';
+    @import '0-base/rfs';
+    @import '0-base/helper';
+    @import '1-global/default';
+    @import '1-global/spacing';
+    @import '2-layout/header';
+    @import '2-layout/footer';
+    @import '2-layout/sidebar'; 
+    @import '3-elements/button';
+    @import '3-elements/section-title';
+    @import '3-elements/backgrounds';
+    @import '3-elements/scroll-top';
+    @import '3-elements/breadcrumb';
+    @import '3-elements/pagination';
+    @import '3-elements/preloader';
+    @import '4-sections/hero-slider';
+    @import '4-sections/service-grid-slider';
+    @import '4-sections/video-cta';
+    @import '4-sections/project-slider';
+    @import '4-sections/team';
+    @import '4-sections/testimonial-slider';
+    @import '4-sections/service-tab';
+    @import '4-sections/fun-fact';
+    @import '5-pages/blog';
+    @import '5-pages/about';
+    @import '5-pages/service';
+    @import '5-pages/project';
+    @import '5-pages/contact';
+    @import '5-pages/404';
+    @import '5-pages/landing'; 

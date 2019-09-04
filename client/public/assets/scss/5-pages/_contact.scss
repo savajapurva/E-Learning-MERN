@@ -1,0 +1,100 @@
+
+/*=============================================
+=            contact            =
+=============================================*/
+
+
+/*-- Map --*/
+.contact-map {
+    
+    iframe{
+        height: 400px;
+        width: 100%;
+        border: none;
+    }
+}
+
+/*-- Contact Information --*/
+.contact-information {
+
+    @media #{$tablet-device}{
+        margin-bottom: 50px;
+    }
+
+    @media #{$large-mobile}{
+        margin-bottom: 30px;
+    }
+
+    & h3 {
+        margin-bottom: 30px;
+    }
+    & ul {
+        & li {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            & .icon {
+                width: 50px;
+                & i {
+                    font-size: 30px;
+                }
+            }
+            & .text {
+                max-width: calc(100% - 50px);
+                & span, & a {
+                    display: block;
+                    line-height: 24px;
+                    max-width: 230px;
+
+                    &:hover{
+                        color: $theme-color--default;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-- Contact Form --*/
+.contact-form {
+    & h3 {
+        margin-bottom: 30px;
+    }
+    & input {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #eeeeee;
+        padding: 5px 20px;
+    }
+    & textarea {
+        width: 100%;
+        height: 120px;
+        border: 1px solid #eeeeee;
+        padding: 10px 20px;
+        resize: none;
+    }
+    & input[type="submit"], & button, & .submit {
+        width: auto;
+        height: 50px;
+        border: none;
+        padding: 5px 30px;
+        background-color: $theme-color--default;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 15px;
+        &:hover {
+            background-color: $heading-text-color;
+        }
+    }
+}
+
+.form-message{
+    line-height: 2;
+}
+
+/*=====  End of contact  ======*/
+

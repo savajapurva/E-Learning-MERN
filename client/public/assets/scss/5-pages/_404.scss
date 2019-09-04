@@ -1,0 +1,54 @@
+
+/*=============================================
+=            404            =
+=============================================*/
+
+.error-page-wrapper {
+    min-height: 700px;
+   
+    @media #{$desktop-device, $tablet-device, $large-mobile}{
+        min-height: 500px;
+    }
+
+    @media #{$small-mobile}{
+        min-height: 400px;
+    }
+
+    [class*="col-"] {
+      height: auto;
+      * {
+        height: auto;
+      }
+    }
+  }
+  
+  .error-page-content-wrap {
+    height: auto;
+    @include font-size(16);
+    h2 {
+      color: $theme-color--black;
+      @include font-size(120);
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      line-height: 1;
+      font-weight: 900;
+  
+      @media #{$large-mobile} {
+        @include font-size(100);
+      }
+    }
+  
+    h3 {
+      @include font-size(32);
+      color: $black;
+      margin-bottom: 12px;
+  
+      @media #{$large-mobile} {
+        @include font-size(20);
+        margin-bottom: 5px;
+      }
+    }
+  
+  }
+
+/*=====  End of 404  ======*/
+

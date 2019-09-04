@@ -1,0 +1,149 @@
+
+/*=============================================
+=            Sidebar            =
+=============================================*/
+
+
+/*-- Sidebar --*/
+.sidebar {
+    margin-bottom: 50px;
+    background-color: #f7f8f9;
+    padding: 30px;
+    &.sidebar-two {
+        padding: 0;
+        background-color: transparent;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+/*-- Sidebar Title --*/
+.sidebar-title {
+    margin-bottom: 30px;
+    margin-top: -4px;
+}
+/*-- Sidebar Search --*/
+.sidebar-search {
+    & form {
+        display: flex;
+        border: 1px solid #e5e6e7;
+        & input {
+            flex: 1 0 calc(100% - 40px);
+            max-width: calc(100% - 40px);
+            height: 40px;
+            border: none;
+            background-color: transparent;
+            padding: 0 15px;
+            color: $body-text-color;
+        }
+        & button {
+            max-width: 40px;
+            flex: 1 0 40px;
+            height: 40px;
+            border: none;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            & i {
+                font-size: 20px;
+            }
+            &:hover {
+                color: $theme-color--default;
+            }
+        }
+    }
+}
+/*-- Sidebar List --*/
+.sidebar-list {
+    & li {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e5e6e7;
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: 0 solid transparent;
+        }
+        & a {
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            & img {
+                width: 25px;
+                margin-right: 15px;
+            }
+            & i {
+                margin-right: 15px;
+                font-size: 24px;
+            }
+            &:hover {
+                color: $theme-color--default;
+            }
+        }
+    }
+}
+/*-- Sidebar Blog --*/
+.sidebar-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e6e7;
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+    & .image {
+        max-width: 80px;
+        flex: 1 0 80px;
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        flex: 1 0 calc(100% - 80px);
+        max-width: calc(100% - 80px);
+        padding-left: 15px;
+        & h5 {
+            font-size: 16px;
+            line-height: 1.5;
+            & a {
+                &:hover{
+                    color: $theme-color--default;
+                }
+            }
+        }
+        & span {
+            font-size: 13px;
+            display: block;
+            line-height: 18px;
+        }
+    }
+}
+/*-- Sidebar Tags --*/
+.sidebar-tag {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+    & li {
+        padding: 5px;
+        & a {
+            display: block;
+            border: 1px solid #e5e6e7;
+            padding: 3px 15px;
+            font-size: 14px;
+            &:hover {
+                background-color: $theme-color--default;
+                border-color: $theme-color--default;
+                color: $white;
+            }
+        }
+    }
+}
+
+
+/*=====  End of Sidebar  ======*/
+
