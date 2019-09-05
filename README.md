@@ -9,29 +9,26 @@ It is a E-Learning website which provides functionality of registering in any co
 
 ```bash
 # clone repository
-https://github.com/savajapurva/ecommerce-MERN-Frontend.git
+https://github.com/savajapurva/E-Learning-MERN.git
 
 # Install dependencies
 cd ecommerce-MERN && npm install
 cd ecommerce-MERN-Frontend && npm install
 
 ```
-Create an account in Braintree and create new App. Copy the provided credentials to your app. 
-Enter following creadentials in .env file.
+Create account in Mongo Atlas and create cluster. Get your MongoURI by following the instructions and add it in keys.js file which is inside the config folder. 
 
 ```
-DATABASE=mongodb://localhost/ecommerce
-JWT_SECRET=hdfsajkfhlsdkja
-BRAINTREE_MERCHANT_ID=YOUR_OWN_ID
-BRAINTREE_PUBLIC_KEY=YOUR_OWN_KEY
-BRAINTREE_PRIVATE_KEY=YOUR_OWN_ID
+secretOrKey=ANY_SECRET
+mongoURI: 'YOUR_URI'
+
 ```
 
 To run the development server:
 
 ```bash
 # the development server runs on port 3000
-npm start
+npm run dev
 ```
 
 To run production build:
