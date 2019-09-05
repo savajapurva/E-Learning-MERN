@@ -18,7 +18,7 @@ class Footer extends Component {
                           <a href={`${process.env.PUBLIC_URL}/home-two`}>
                             <div className="logoHead">
                               <img
-                                src="assets/img/logo/logonew.png"
+                                src="/assets/img/logo/logonew.png"
                                 alt=""
                                 className="sticky-logo img-fluid"
                               />

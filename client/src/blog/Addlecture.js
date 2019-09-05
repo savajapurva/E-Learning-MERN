@@ -183,6 +183,7 @@ export default class Upload extends Component {
                 method="POST"
                 encType="multipart/form-data"
               >
+                <h1 className="h3 mb-3 font-weight-normal">Upload Video</h1>
                 <div class="form-group files">
                   <div className="form-group">
                     <label>Course Name </label>

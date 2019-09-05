@@ -73,27 +73,21 @@ class NavBar extends Component {
                               </li>
                               <li>
                                 <a
-                                  href={`${
-                                    process.env.PUBLIC_URL
-                                  }/ShowCourseList`}
+                                  href={`${process.env.PUBLIC_URL}/ShowCourseList`}
                                 >
                                   COURSES
                                 </a>
                               </li>
                               <li>
                                 <a
-                                  href={`${
-                                    process.env.PUBLIC_URL
-                                  }/ShowCategoryList`}
+                                  href={`${process.env.PUBLIC_URL}/ShowCategoryList`}
                                 >
                                   CATEGORIES
                                 </a>
                               </li>
                               <li>
                                 <a
-                                  href={`${
-                                    process.env.PUBLIC_URL
-                                  }/EnrollmentList`}
+                                  href={`${process.env.PUBLIC_URL}/EnrollmentList`}
                                 >
                                   ENROLLED USERS
                                 </a>
@@ -254,7 +248,7 @@ class NavBar extends Component {
                           <a href={`${process.env.PUBLIC_URL}/home-two`}>
                             <div className="logoHead">
                               <img
-                                src="assets/img/logo/logonew.png"
+                                src="/assets/img/logo/logonew.png"
                                 alt=""
                                 className="sticky-logo img-fluid"
                               />

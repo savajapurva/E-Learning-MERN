@@ -12,7 +12,7 @@ export default class Forgot extends Component {
                 <div class="card-body">
                   <div className="logoHead">
                     <img
-                      src="assets/img/logo/logonew.png"
+                      src="/assets/img/logo/logonew.png"
                       alt=""
                       height="60px"
                       width="60px"
