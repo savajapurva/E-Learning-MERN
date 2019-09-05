@@ -113,7 +113,24 @@ npm run prod
 - [x] **[react-redux](https://github.com/reduxjs/react-redux)**
 - [x] **[redux-thunk](https://github.com/reduxjs/redux-thunk)**
 - [x] **[validator](https://github.com/chriso/validator.js)**
-- [x] **[canvasjs]**
+- [x] **[canvasjs]()**
+- [x] **[file-loader]()**
+- [x] **[fs-extra]()**
+- [x] **[canvasjs]()**
+- [x] **[node-sass]()**
+- [x] **[postcss-loader]()**
+- [x] **[react-countup]()**
+- [x] **[react-modal-video]()**
+- [x] **[react-toastify]()**
+- [x] **[react-visibility-sensor]()**
+- [x] **[reactjs-popup]()**
+- [x] **[reactstrap]()**
+- [x] **[sass-loader]()**
+- [x] **[semver]()**
+- [x] **[swiper]()**
+- [x] **[url-loader]()**
+- [x] **[animate.css]()**
+
 
 ### Server Side
 
