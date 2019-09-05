@@ -93,7 +93,6 @@ npm run prod
 ---
 
 <img src="img/eee.png">
----
 
 ## Main Technologies
 
