@@ -12,8 +12,8 @@ It is a E-Learning website which provides functionality of registering in any co
 https://github.com/savajapurva/E-Learning-MERN.git
 
 # Install dependencies
-cd ecommerce-MERN && npm install
-cd ecommerce-MERN-Frontend && npm install
+cd E-Learning-MERN && npm install
+cd E-Learning-MERN && cd client && npm install
 
 ```
 Create account in Mongo Atlas and create cluster. Get your MongoURI by following the instructions and add it in keys.js file which is inside the config folder. 
