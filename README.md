@@ -40,42 +40,63 @@ npm run build
 # run production server
 npm run prod
 ```
+---
 
+## Instructor's Portal
 
-<img src="img/React App (1).png">
+<img src="img/login_i.png">
 
 ---
 
-<img src="img/React App (4).png">
+<img src="img/g.png">
 
 ---
 
-<img src="img/React App (3).png">
+<img src="img/e.png">
 
 ---
 
-<img src="img/React App (6).png">
+<img src="img/d.png">
 
 ---
 
-<img src="img/React App (8).png">
+## Student's Portal
 
 ---
 
-<img src="img/React App (9).png">
+<img src="img/b.png">
 
 ---
 
-<img src="img/React App (11).png">
+<img src="img/abc.png">
 
 ---
 
-<img src="img/React App (10).png">
+<img src="img/cc.png">
 
 ---
 
-<img src="img/Welcome - Braintree Gateway.png">
+## Admin Portal
 
+---
+
+<img src="img/aaa.png">
+
+---
+
+<img src="img/bbb.png">
+
+---
+
+<img src="img/ccc.png">
+
+---
+
+<img src="img/ddd.png">
+
+---
+
+<img src="img/eee.png">
 ---
 
 ## Main Technologies
