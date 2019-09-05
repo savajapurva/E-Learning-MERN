@@ -142,10 +142,13 @@ npm run prod
 
 #### Libraries used in Server-side
 
+- [x] **[express-fileupload](https://github.com/dcodeIO/bcrypt.js)**
 - [x] **[bcryptjs](https://github.com/dcodeIO/bcrypt.js)**
-- [x] **[bluebird](http://bluebirdjs.com/docs/getting-started.html)**
 - [x] **[gravatar](https://github.com/emerleite/node-gravatar)**
 - [x] **[mongoose](http://mongoosejs.com/)**
 - [x] **[jwt-decode](https://github.com/auth0/jwt-decode)**
 - [x] **[moment](https://momentjs.com/)**
 - [x] **[validator](https://github.com/chriso/validator.js)**
+- [x] **[cors]()**
+- [x] **[jsonwebtoken]()**
+- [x] **[body-parser]()**
