@@ -94,39 +94,41 @@ npm run prod
 
 <img src="img/eee.png">
 
+---
+
 ## Main Technologies
 
 ### Client Side
 
 - [x] **[React](https://github.com/facebook/react)**
+- [x] **[Redux](https://github.com/reactjs/redux)**
 - [x] **[Bootstap 4](https://github.com/twbs/bootstrap/tree/v4-dev)**
 - [x] **[React-Router-DOM](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
 
 #### Libraries used in Client-side
 
-- [x] **[query-string](https://github.com/sindresorhus/query-string)**
-- [x] **[moment](https://github.com/headzoo/react-moment)**
-- [x] **[braintree-web-drop-in-react](https://github.com/braintree/braintree-web)**
-- [x] **[braintree-web](https://github.com/braintree/braintree-web)**
+- [x] **[axios](https://github.com/axios/axios)**
+- [x] **[classnames](https://github.com/JedWatson/classnames)**
+- [x] **[react-moment](https://github.com/headzoo/react-moment)**
+- [x] **[react-redux](https://github.com/reduxjs/react-redux)**
+- [x] **[redux-thunk](https://github.com/reduxjs/redux-thunk)**
+- [x] **[validator](https://github.com/chriso/validator.js)**
+- [x] **[canvasjs]**
 
 ### Server Side
 
 - [x] **[Node.js / Express](https://github.com/expressjs/express)**
 - [x] **[MongoDB](https://github.com/mongodb/mongo)**
 - [x] **[JWT](https://github.com/auth0/node-jsonwebtoken)**
-- [x] **[dotenv](https://github.com/motdotla/dotenv)**
-- [x] **[cors](https://github.com/expressjs/cors)**
-- [x] **[uuid](https://github.com/kelektiv/node-uuid)**
+- [x] **[Passport](http://www.passportjs.org/)**
+- [x] **[Passport-jwt](https://github.com/themikenicholson/passport-jwt)**
 
 #### Libraries used in Server-side
 
-- [x] **[cookie-parser](https://github.com/expressjs/cookie-parser)**
-- [x] **[loadash](https://github.com/lodash/lodash)**
-- [x] **[formidable](https://github.com/node-formidable/node-formidable)**
-- [x] **[braintree](https://github.com/braintree)**
-- [x] **[morgan](https://github.com/expressjs/morgan)**
+- [x] **[bcryptjs](https://github.com/dcodeIO/bcrypt.js)**
+- [x] **[bluebird](http://bluebirdjs.com/docs/getting-started.html)**
+- [x] **[gravatar](https://github.com/emerleite/node-gravatar)**
 - [x] **[mongoose](http://mongoosejs.com/)**
 - [x] **[jwt-decode](https://github.com/auth0/jwt-decode)**
 - [x] **[moment](https://momentjs.com/)**
-- [x] **[express-validator](https://github.com/express-validator/express-validator)**
-
+- [x] **[validator](https://github.com/chriso/validator.js)**
