@@ -46,7 +46,7 @@ npm run prod
 
 <img src="img/login_i.png">
 
-##
+---
 
 <img src="img/g.png">
 
@@ -62,8 +62,6 @@ npm run prod
 
 ## Student's Portal
 
----
-
 <img src="img/b.png">
 
 ---
@@ -77,8 +75,6 @@ npm run prod
 ---
 
 ## Admin Portal
-
----
 
 <img src="img/aaa.png">
 
